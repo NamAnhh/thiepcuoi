@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import "./App.scss";
 import icArrow from "./assets/images/icArrow.svg";
 import icHoa from "./assets/images/icHoa.svg";
@@ -27,6 +28,12 @@ function App() {
   };
   return (
     <div className='main-content'>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Đám cưới Nam Anh - Hồng Hạnh</title>
+        <meta name='description' content='Đám cưới chúng mình...' />
+        <link rel='canonical' href={bg1} />
+      </Helmet>
       {/* cover 1 */}
       <div className='cover1'>
         <img src={bg1} alt='' />
